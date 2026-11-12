@@ -2,7 +2,7 @@
 // CONFIGURE AQUI: seu WhatsApp com código do país e DDD, só números.
 // Exemplo: "5562999999999". Todos os botões do site usam esse número.
 // ============================================================
-const WHATSAPP_NUMBER = '55XXXXXXXXXXX';
+const WHATSAPP_NUMBER = '5562992117409';
 
 document.documentElement.classList.remove('js-off');
 
