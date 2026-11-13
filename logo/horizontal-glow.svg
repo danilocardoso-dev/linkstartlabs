@@ -1,0 +1,17 @@
+<!-- Lockup horizontal com brilho — capas, banners, apresentações -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <filter id="glow2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.1" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="320" height="80" rx="14" fill="#030303"/>
+  <g transform="translate(14 14)" filter="url(#glow2)">
+    <circle cx="26" cy="26" r="21.5" stroke="#00F0FF" stroke-width="2" stroke-dasharray="100 34" stroke-linecap="round" transform="rotate(-40 26 26)"/>
+    <path d="M16.5 15v22h9.5" stroke="#00F0FF" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36.6 16.5c-5 0-8.1 2.3-8.1 5.5 0 3.3 3.1 4.2 6.9 5 4.4.9 8.5 1.9 8.5 6.1 0 3.5-3.5 5.8-8.7 5.8" stroke="#9D4EDD" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="90" y="42" fill="#E8EAF0" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" letter-spacing="-0.5">Link Start</text>
+  <text x="91" y="60" fill="#00F0FF" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="11" letter-spacing="6">LABS</text>
+</svg>

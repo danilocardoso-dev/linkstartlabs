@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Link Start Labs · Sistemas e sites sob medida em Goiânia</title>
+  <title>Link Start Labs · Sistemas e sites sob medida</title>
   <meta name="description" content="A Link Start Labs cria sistemas, sites e produtos SaaS para pequenos negócios: GiraComanda para restaurantes e LeadFind para prospecção. Teste 7 dias grátis.">
   <meta name="theme-color" content="#030303">
   <meta property="og:type" content="website">
@@ -19,6 +19,8 @@
 </head>
 <body class="min-h-screen overflow-x-hidden">
 
+<canvas id="bg-fx" class="fixed inset-0 -z-10 pointer-events-none" aria-hidden="true"></canvas>
+
 <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-neon focus:text-black focus:px-4 focus:py-2 focus:rounded-lg">Pular para o conteúdo</a>
 
 <!-- ============ HEADER ============ -->
@@ -27,8 +29,8 @@
     <a href="#topo" class="flex items-center gap-3" aria-label="Link Start Labs, início">
       <svg class="w-9 h-9" viewBox="0 0 40 40" fill="none" aria-hidden="true">
         <circle cx="20" cy="20" r="16.5" stroke="#00F0FF" stroke-width="1.6" stroke-dasharray="78 26" stroke-linecap="round" transform="rotate(-40 20 20)"/>
-        <path d="M12.5 12.5v15h7" stroke="#00F0FF" stroke-width="2.6" stroke-linecap="square"/>
-        <path d="M29 14.5h-6v5.5h6v5.5h-6.5" stroke="#9D4EDD" stroke-width="2.6" stroke-linecap="square"/>
+        <path d="M12.5 11.5v17h7.5" stroke="#00F0FF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28.3 12.6c-4 0-6.4 1.8-6.4 4.3 0 2.7 2.5 3.4 5.5 4 3.5.7 6.7 1.5 6.7 4.8 0 2.8-2.7 4.6-6.9 4.6" stroke="#9D4EDD" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <span class="font-bold tracking-tight leading-none">Link Start<span class="block font-mono text-[10px] tracking-[.28em] text-neon mt-1">LABS</span></span>
     </a>
@@ -36,7 +38,6 @@
     <nav class="hidden md:flex items-center gap-8 text-sm text-mute" aria-label="Principal">
       <a class="hover:text-white transition-colors" href="#produtos">Produtos</a>
       <a class="hover:text-white transition-colors" href="#sob-medida">Sob medida</a>
-      <a class="hover:text-white transition-colors" href="#divisoes">Divisões</a>
       <a class="hover:text-white transition-colors" href="#sobre">Sobre</a>
       <a class="hover:text-white transition-colors" href="#contato">Contato</a>
     </nav>
@@ -51,7 +52,6 @@
   <nav id="menu-mobile" class="md:hidden hidden border-t border-white/10 px-5 py-4 grid gap-1 text-[.95rem]" aria-label="Menu mobile">
     <a class="py-2.5 text-mute hover:text-white" href="#produtos">Produtos</a>
     <a class="py-2.5 text-mute hover:text-white" href="#sob-medida">Sob medida</a>
-    <a class="py-2.5 text-mute hover:text-white" href="#divisoes">Divisões</a>
     <a class="py-2.5 text-mute hover:text-white" href="#sobre">Sobre</a>
     <a class="py-2.5 text-mute hover:text-white" href="#contato">Contato</a>
     <a data-wa="Olá! Quero conversar sobre um projeto com a Link Start Labs." class="btn btn-primary mt-2">Falar no WhatsApp</a>
@@ -72,7 +72,7 @@
 
   <div class="relative mx-auto max-w-7xl px-5 w-full grid lg:grid-cols-[1.15fr_.85fr] gap-14 items-center">
     <div>
-      <p class="eyebrow mb-6">Software · Goiânia, GO</p>
+      <p class="eyebrow mb-6">Software</p>
       <h1 class="text-[2.6rem] sm:text-6xl lg:text-[4.3rem] font-extrabold leading-[1.04] tracking-tight">
         Seu negócio entra no <span class="grad-text">próximo nível.</span>
       </h1>
@@ -100,19 +100,16 @@
       </div>
       <div class="p-6 font-mono text-[13px] leading-7">
         <p><span class="text-neon">&gt;</span> link start --labs</p>
-        <p class="text-mute">Inicializando laboratórios...</p>
+        <p class="text-mute">Inicializando produtos...</p>
         <div class="mt-4 grid gap-2.5">
           <div class="flex items-center justify-between border border-white/10 rounded-lg px-3.5 py-2.5 bg-white/[.02]">
-            <span class="flex items-center gap-2.5"><span class="status-dot dot-on"></span>tech.linkstart</span><span class="text-[#3dffb0] text-[11px] tracking-widest">ONLINE</span>
+            <span class="flex items-center gap-2.5"><span class="status-dot dot-on"></span>giracomanda.linkstart</span><span class="text-[#3dffb0] text-[11px] tracking-widest">ONLINE</span>
           </div>
           <div class="flex items-center justify-between border border-white/10 rounded-lg px-3.5 py-2.5 bg-white/[.02] text-mute">
-            <span class="flex items-center gap-2.5"><span class="status-dot dot-wait"></span>studio.linkstart</span><span class="text-[11px] tracking-widest">EM BREVE</span>
-          </div>
-          <div class="flex items-center justify-between border border-white/10 rounded-lg px-3.5 py-2.5 bg-white/[.02] text-mute">
-            <span class="flex items-center gap-2.5"><span class="status-dot dot-wait"></span>cyber.linkstart</span><span class="text-[11px] tracking-widest">EM BREVE</span>
+            <span class="flex items-center gap-2.5"><span class="status-dot dot-wait"></span>leadfind.linkstart</span><span class="text-[11px] tracking-widest">EM DEV</span>
           </div>
         </div>
-        <p class="mt-5"><span class="text-neon">&gt;</span> pronto para jogar<span class="cursor"></span></p>
+        <p class="mt-5"><span class="text-neon">&gt;</span><span class="cursor"></span></p>
       </div>
     </div>
   </div>
@@ -132,8 +129,7 @@
       <article class="hud-card p-7 sm:p-9 flex flex-col reveal">
         <div class="flex items-start justify-between gap-4">
           <div>
-            <p class="font-mono text-xs text-neon tracking-widest">PRODUTO 01</p>
-            <h3 class="mt-2 text-2xl font-bold">GiraComanda</h3>
+            <h3 class="text-2xl font-bold">GiraComanda</h3>
           </div>
           <span class="tag tag-neon">Restaurantes</span>
         </div>
@@ -152,7 +148,7 @@
             <p class="text-3xl font-extrabold">R$ 297<span class="text-base font-medium text-mute">/mês</span></p>
             <p class="text-xs text-mute mt-1">ou R$ 2.970/ano (2 meses grátis)</p>
           </div>
-          <a href="https://giracomanda.danilovcardoso.com.br/" target="_blank" rel="noopener" class="btn btn-primary">Testar 7 dias grátis</a>
+          <a href="https://giracomanda.linkstartlabs.com.br/" target="_blank" rel="noopener" class="btn btn-primary">Testar 7 dias grátis</a>
         </div>
       </article>
 
@@ -160,10 +156,12 @@
       <article class="hud-card p-7 sm:p-9 flex flex-col reveal">
         <div class="flex items-start justify-between gap-4">
           <div>
-            <p class="font-mono text-xs text-violet tracking-widest">PRODUTO 02</p>
-            <h3 class="mt-2 text-2xl font-bold">LeadFind</h3>
+            <h3 class="text-2xl font-bold">LeadFind</h3>
           </div>
-          <span class="tag tag-violet">Prospecção</span>
+          <div class="flex flex-col items-end gap-2">
+            <span class="tag tag-violet">Prospecção</span>
+            <span class="tag flex items-center gap-1.5"><span class="status-dot dot-wait !w-1.5 !h-1.5"></span>Em desenvolvimento</span>
+          </div>
         </div>
         <p class="mt-4 text-mute leading-relaxed">Encontre empresas na sua região, veja telefone e site e mande propostas pelo WhatsApp. Feito para autônomos e pequenas empresas que vendem de porta em porta digital.</p>
         <ul class="check mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5 text-sm text-ink/90">
@@ -178,9 +176,9 @@
           <div>
             <p class="font-mono text-[11px] text-mute tracking-widest">A PARTIR DE</p>
             <p class="text-3xl font-extrabold">R$ 97<span class="text-base font-medium text-mute">/mês</span></p>
-            <p class="text-xs text-mute mt-1">Planos Essencial, Profissional e Equipe</p>
+            <p class="text-xs text-mute mt-1">Planos Essencial, Profissional e Equipe · em breve</p>
           </div>
-          <a data-wa="Olá! Quero testar o LeadFind por 7 dias." class="btn btn-primary">Testar 7 dias grátis</a>
+          <a data-wa="Olá! Quero ser avisado quando o LeadFind lançar." class="btn btn-ghost">Avise-me no lançamento</a>
         </div>
       </article>
     </div>
@@ -233,35 +231,6 @@
   </div>
 </section>
 
-<!-- ============ DIVISÕES ============ -->
-<section id="divisoes" class="relative py-24 border-t border-white/5">
-  <div class="mx-auto max-w-7xl px-5">
-    <div class="max-w-2xl reveal">
-      <p class="eyebrow mb-4">Divisões</p>
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Três laboratórios. Uma missão.</h2>
-      <p class="mt-4 text-mute leading-relaxed">A Link Start Labs nasceu para crescer em três frentes. Começamos pela tecnologia, e as outras abrem quando for a hora.</p>
-    </div>
-
-    <div class="mt-12 grid md:grid-cols-3 gap-5">
-      <div class="hud-card p-7 reveal !border-neon/40">
-        <div class="flex items-center justify-between"><p class="font-mono text-sm text-neon">tech.linkstart</p><span class="tag tag-neon flex items-center gap-1.5"><span class="status-dot dot-on !w-1.5 !h-1.5"></span>Online</span></div>
-        <h3 class="mt-5 text-xl font-bold">Tecnologia</h3>
-        <p class="mt-2 text-sm text-mute leading-relaxed">Produtos SaaS e sistemas sob medida. É por aqui que a Link Start Labs começa.</p>
-      </div>
-      <div class="hud-card p-7 reveal opacity-80">
-        <div class="flex items-center justify-between"><p class="font-mono text-sm text-ink/80">studio.linkstart</p><span class="tag">Em breve</span></div>
-        <h3 class="mt-5 text-xl font-bold">Studio</h3>
-        <p class="mt-2 text-sm text-mute leading-relaxed">Jogos independentes. O sonho de infância que deu nome à empresa.</p>
-      </div>
-      <div class="hud-card p-7 reveal opacity-80">
-        <div class="flex items-center justify-between"><p class="font-mono text-sm text-ink/80">cyber.linkstart</p><span class="tag">Em breve</span></div>
-        <h3 class="mt-5 text-xl font-bold">Cyber</h3>
-        <p class="mt-2 text-sm text-mute leading-relaxed">Segurança da informação e testes de invasão para empresas que querem se proteger.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ SOBRE ============ -->
 <section id="sobre" class="relative py-24 border-t border-white/5">
   <div class="mx-auto max-w-7xl px-5 grid lg:grid-cols-[1fr_1.1fr] gap-14 items-center">
@@ -271,12 +240,11 @@
     </div>
     <div class="reveal space-y-5 text-mute leading-relaxed text-[1.02rem]">
       <p><span class="text-ink font-medium">"Link Start"</span> é a frase de quem está prestes a entrar em outro mundo. Foi assim que a gente pensou a Link Start Labs: um lugar onde ideias viram sistemas que funcionam de verdade.</p>
-      <p>Somos de Goiânia. Começamos com produtos pequenos e úteis, feitos junto com quem vive o problema: o dono do restaurante que perdia consumo no caderno, o autônomo que não sabia a quem oferecer o serviço.</p>
+      <p>Começamos com produtos pequenos e úteis, feitos junto com quem vive o problema: o dono do restaurante que perdia consumo no caderno, o autônomo que não sabia a quem oferecer o serviço.</p>
       <p>Aqui você fala direto com quem desenvolve. Sem fila de atendimento, sem promessa que o sistema não cumpre.</p>
-      <div class="pt-2 grid grid-cols-3 gap-4 font-mono text-center">
+      <div class="pt-2 grid grid-cols-2 gap-4 font-mono text-center">
         <div class="hud-card py-4"><p class="text-neon text-xl font-bold">2</p><p class="text-[11px] text-mute mt-1 tracking-wider">PRODUTOS</p></div>
         <div class="hud-card py-4"><p class="text-neon text-xl font-bold">7 dias</p><p class="text-[11px] text-mute mt-1 tracking-wider">DE TESTE</p></div>
-        <div class="hud-card py-4"><p class="text-neon text-xl font-bold">GO</p><p class="text-[11px] text-mute mt-1 tracking-wider">GOIÂNIA</p></div>
       </div>
     </div>
   </div>
@@ -306,8 +274,8 @@
     <div class="flex items-center gap-3">
       <svg class="w-7 h-7" viewBox="0 0 40 40" fill="none" aria-hidden="true">
         <circle cx="20" cy="20" r="16.5" stroke="#00F0FF" stroke-width="1.6" stroke-dasharray="78 26" stroke-linecap="round" transform="rotate(-40 20 20)"/>
-        <path d="M12.5 12.5v15h7" stroke="#00F0FF" stroke-width="2.6" stroke-linecap="square"/>
-        <path d="M29 14.5h-6v5.5h6v5.5h-6.5" stroke="#9D4EDD" stroke-width="2.6" stroke-linecap="square"/>
+        <path d="M12.5 11.5v17h7.5" stroke="#00F0FF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28.3 12.6c-4 0-6.4 1.8-6.4 4.3 0 2.7 2.5 3.4 5.5 4 3.5.7 6.7 1.5 6.7 4.8 0 2.8-2.7 4.6-6.9 4.6" stroke="#9D4EDD" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <p>© <span id="ano">2026</span> Link Start Labs. Todos os direitos reservados.</p>
     </div>
